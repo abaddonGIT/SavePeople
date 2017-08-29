@@ -1,0 +1,11 @@
+extends blocks/layouts/default
+
+block head
+    - var pageTitle = 'Home page application';
+    - var pageDesc = 'Home page description';
+    - var pageWords = 'First page';
+
+block content
+    +b.MAIN.main
+        +b#app
+

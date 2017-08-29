@@ -1,0 +1,12 @@
+include ../../../node_modules/bemto.pug/bemto
+include ../page/page
+include ../icon/icon
+include ../scripts/scripts
+
+doctype html
+html(lang="ru-RU")
+    include ../head/head
+    +page
+    block content
+    +b.FOOTER
+        +scripts(['manifest.bundle.js', 'node.bundle.js', 'vendor.bundle.js', 'js.bundle.js'])

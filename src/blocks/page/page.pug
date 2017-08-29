@@ -1,0 +1,5 @@
+mixin page()
+    +b('body').page&attributes(attributes)
+        noscript.is-noScript
+            | У вас отключен JavaScript. Сайт может отображаться некорректно. Рекомендуем включить JavaScript.
+        block
